@@ -65,6 +65,10 @@ export function PixInput() {
             style={{
               borderColor:
                 selectedOption === option.installments ? "#03D69D" : "#E5E5E5",
+              backgroundColor:
+                selectedOption === option.installments
+                  ? "#F0FFF4"
+                  : "transparent",
             }}
           >
             {index === 0 && (
