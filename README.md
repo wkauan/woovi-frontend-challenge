@@ -7,8 +7,7 @@ Para mais detalhes sobre o desafio, consulte a [Requisitos](https://woovi.com/jo
 - **ReactJs**
 - **TypeScript**
 - **TailwindCSS**
-<!-- Biblioteca para icons -->
-- **Lucide**
+- **Lucide** <!-- Biblioteca para icons -->
 
 ## Instalação
 
