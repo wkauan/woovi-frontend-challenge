@@ -47,7 +47,7 @@ const paymentOptions = [
 ];
 
 export function PixInput() {
-  const [selectedOption, setSelectedOption] = useState<number | null>(null);
+  const [selectedOption, setSelectedOption] = useState<number>(1);
 
   return (
     <div className="w-full px-3 font-medium">
