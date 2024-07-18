@@ -1,3 +1,13 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { PaymentMethod } from "./pages/payment-method";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <PaymentMethod />,
+  },
+]);
+
 export function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return <RouterProvider router={router} />;
 }
