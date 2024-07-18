@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Header } from "../../components/header";
 import { PixInput } from "./pix-input";
 import { Footer } from "../../components/footer";
+import { Button } from "../../components/button";
 
 export function PaymentMethod() {
   const navigate = useNavigate();
@@ -25,13 +26,10 @@ export function PaymentMethod() {
         <PixInput />
 
         <div className="py-8">
-          <button
-            onClick={nextPage}
-            className="bg-[#03D69D] text-white rounded-xl px-2 py-0.5 font-semibold flex gap-2"
-          >
+          <Button onClick={nextPage}>
             Continuar
             <ArrowRight />
-          </button>
+          </Button>
         </div>
 
         <Footer />
