@@ -1,10 +1,17 @@
-import { Circle, ChevronUp } from "lucide-react";
+import { Circle, ChevronUp, ChevronDown } from "lucide-react";
+import { useState } from "react";
+import { InformationModal } from "../pages/pix-payment-qrcode/information-modal";
 
 interface PaymentDetailsProps {
   total: string;
 }
 
 export function PaymentDetails({ total }: PaymentDetailsProps) {
+  const [isInformationModalOpen, setIsInformationModalOpen] = useState(false);
+
+  function toggleInformationModal() {
+    setIsInformationModalOpen(prevState => !prevState);
+  }
   return (
     <div className="space-y-4 text-xs py-4 w-full">
       <div className="px-3">
@@ -38,12 +45,18 @@ export function PaymentDetails({ total }: PaymentDetailsProps) {
       <div className="px-3">
         <div className="flex px-1">
           <p className="font-semibold">Como funciona?</p>
-          <button className="ml-auto">
-            <ChevronUp className="size-4" />
+          <button onClick={toggleInformationModal} className="ml-auto">
+            {isInformationModalOpen ? (
+              <ChevronDown className="size-4" />
+            ) : (
+              <ChevronUp className="size-4" />
+            )}
           </button>
         </div>
       </div>
       <div className="w-11/12 h-px bg-[#E5E5E5] ml-3" />
+
+      {isInformationModalOpen && <InformationModal />}
     </div>
   );
 }
