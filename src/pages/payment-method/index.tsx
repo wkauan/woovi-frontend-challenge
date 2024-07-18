@@ -2,14 +2,13 @@ import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "../../components/header";
 import { PixInput } from "./pix-input";
-import { PixInstallments } from "./pix-installments";
 import { Footer } from "../../components/footer";
 
 export function PaymentMethod() {
   const navigate = useNavigate();
 
   function nextPage() {
-    navigate("/next");
+    navigate("/paymentQrCode");
   }
 
   return (
@@ -25,9 +24,7 @@ export function PaymentMethod() {
 
         <PixInput />
 
-        <PixInstallments />
-
-        <div>
+        <div className="py-8">
           <button
             onClick={nextPage}
             className="bg-[#03D69D] text-white rounded-xl px-2 py-0.5 font-semibold flex gap-2"
