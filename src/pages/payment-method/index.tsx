@@ -22,7 +22,7 @@ export function PaymentMethod() {
 
         <PixInput />
 
-        <div className="py-8">
+        <div className="pb-8">
           <Button onClick={nextPage}>
             Continuar
             <ArrowRight />
