@@ -1,9 +1,12 @@
 import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
-import { paymentOptions } from "../../lib/data";
+import paymentOptions from "../../lib/data.json";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
 export function FormCheckout() {
+  const defaultInstallmentValue =
+    paymentOptions[0]?.installments[0]?.value || "";
+
   return (
     <Box
       className="space-y-4 px-3"
@@ -75,13 +78,15 @@ export function FormCheckout() {
             labelId="select-label"
             id="select"
             label="Parcelas"
-            defaultValue={paymentOptions[0].installments}
+            defaultValue={defaultInstallmentValue}
           >
-            {paymentOptions.map((option, index) => (
-              <MenuItem key={index} value={option.installments}>
-                {option.installments}x {option.amount}
-              </MenuItem>
-            ))}
+            {paymentOptions.flatMap((option) =>
+              option.installments.map((installment) => (
+                <MenuItem key={installment.value} value={installment.value}>
+                  {installment.value}x {installment.amount}
+                </MenuItem>
+              ))
+            )}
           </Select>
         </FormControl>
       </div>
