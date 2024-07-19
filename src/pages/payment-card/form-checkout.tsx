@@ -18,7 +18,7 @@ export function FormCheckout() {
         },
       }}
     >
-      <div className="flex flex-col space-y-7 mb-5">
+      <div className="flex flex-col space-y-7 py-3">
         <TextField
           fullWidth
           id="name"
