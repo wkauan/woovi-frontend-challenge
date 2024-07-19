@@ -8,7 +8,7 @@ interface Installment {
   bestOption: boolean;
 }
 
-interface PaymentOption {
+export interface PaymentOption {
   type: string;
   installments: Installment[];
 }

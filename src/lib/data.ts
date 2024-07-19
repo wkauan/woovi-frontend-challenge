@@ -1,4 +1,6 @@
-export const paymentOptions = [
+import { PaymentOption } from "../pages/payment-method/pix-input";
+
+export const paymentOptions: PaymentOption[] = [
   {
     type: "Pix",
     installments: [
