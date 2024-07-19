@@ -56,7 +56,7 @@ export function PixInput() {
 
             <div>
               {option.installments === 1 && (
-                <p className="text-xs text-[#03D69D]">
+                <p className="text-sm text-[#03D69D]">
                   Ganhe <span className="font-bold">3%</span> de Cashback
                 </p>
               )}
@@ -66,7 +66,7 @@ export function PixInput() {
               {option.installments === 1 && (
                 <>
                   <img src="./Rectangle.svg" alt="Retangulo" />
-                  <p className="absolute inset-0 flex items-center text-white text-xs px-1">
+                  <p className="absolute inset-0 flex items-center text-white text-sm px-1">
                     🤑 <span className="font-bold px-1">R$ 300,00</span> de
                     volta no seu Pix na hora
                   </p>
@@ -76,14 +76,14 @@ export function PixInput() {
 
             {option.installments !== 1 && (
               <div>
-                <p className="text-xs text-[#AFAFAF]">Total: {option.total}</p>
+                <p className="text-sm text-[#AFAFAF]">Total: {option.total}</p>
               </div>
             )}
 
             {option.bestOption && (
               <div className="relative inline-block">
                 <img src="./Rectangle.svg" alt="Retangulo" />
-                <p className="absolute inset-0 flex items-center text-white text-xs px-1">
+                <p className="absolute inset-0 flex items-center text-white text-sm px-1">
                   <span className="font-bold px-1">-3% de juros:</span> Melhor
                   opção de parcelamento
                 </p>

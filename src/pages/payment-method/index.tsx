@@ -13,12 +13,12 @@ export function PaymentMethod() {
   }
 
   return (
-    <div className="max-w-sm bg-white">
+    <div className="">
       <div className="flex items-center justify-center py-8 flex-col">
         <Header />
 
         <div className="py-8">
-          <h2 className="text-lg font-semibold ">
+          <h2 className="text-2xl font-extrabold">
             João, como você quer pagar?
           </h2>
         </div>

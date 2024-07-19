@@ -15,41 +15,39 @@ export function PaymentCard() {
     navigate("/");
   }
   return (
-    <div className="max-w-sm bg-white">
-      <div className="flex items-center justify-center py-8 flex-col">
-        <Header />
+    <div className="w-full flex items-center justify-center py-8 flex-col">
+      <Header />
 
-        <div className="py-8">
-          <h2 className="text-lg font-semibold ">
-            João, pague o restante em 1x no cartão
-          </h2>
-        </div>
-
-        <div className="w-full">
-          <FormCheckout />
-        </div>
-
-        <div className="py-8 w-full">
-          <Button size="full" variant="secondary">
-            Pagar
-          </Button>
-        </div>
-
-        <PaymentDeadline />
-
-        <PaymentDetails isChecked={true} total={"31.500,00"} />
-
-        <PaymentId />
-
-        <div className="py-8">
-          <Button onClick={nextPage}>
-            Continuar
-            <ArrowRight />
-          </Button>
-        </div>
-
-        <Footer />
+      <div className="py-8">
+        <h2 className="text-2xl font-extrabold">
+          João, pague o restante em 1x no cartão
+        </h2>
       </div>
+
+      <div className="w-full">
+        <FormCheckout />
+      </div>
+
+      <div className="py-8 w-full">
+        <Button size="full" variant="secondary">
+          Pagar
+        </Button>
+      </div>
+
+      <PaymentDeadline />
+
+      <PaymentDetails isChecked={true} total={"31.500,00"} />
+
+      <PaymentId />
+
+      <div className="py-8">
+        <Button onClick={nextPage}>
+          Continuar
+          <ArrowRight />
+        </Button>
+      </div>
+
+      <Footer />
     </div>
   );
 }

@@ -15,16 +15,18 @@ export function PixPaymentQrCode() {
   }
 
   return (
-    <div className="max-w-sm bg-white">
+    <div className="">
       <div className="flex items-center justify-center py-8 flex-col">
         <Header />
 
         <div className="py-8">
-          <h2 className="text-lg font-semibold ">João, pague a entrada de</h2>
-          <h2 className="text-lg font-semibold px-4">R$ 15.300,00 pelo Pix</h2>
+          <h2 className="text-2xl font-extrabold">João, pague a entrada de</h2>
+          <h2 className="text-2xl font-extrabold flex justify-center">
+            R$ 15.300,00 pelo Pix
+          </h2>
         </div>
 
-        <div className="border-2 border-[#03D69D] rounded-xl w-2/3">
+        <div className="border-2 border-[#03D69D] rounded-xl">
           <div className="p-1">
             <img src="./qrCode.svg" alt="qrCode" />
           </div>
