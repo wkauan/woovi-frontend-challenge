@@ -19,7 +19,7 @@ export function PixPaymentQrCode() {
       <div className="flex items-center justify-center py-8 flex-col">
         <Header />
 
-        <div className="py-8">
+        <div className="py-8 items-center">
           <h2 className="text-2xl font-extrabold">João, pague a entrada de</h2>
           <h2 className="text-2xl font-extrabold flex justify-center">
             R$ 15.300,00 pelo Pix

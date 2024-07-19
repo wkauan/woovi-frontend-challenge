@@ -4,6 +4,7 @@ import { Header } from "../../components/header";
 import { PixInput } from "./pix-input";
 import { Footer } from "../../components/footer";
 import { Button } from "../../components/button";
+import { MainText } from "../../components/mainText";
 
 export function PaymentMethod() {
   const navigate = useNavigate();
@@ -17,11 +18,7 @@ export function PaymentMethod() {
       <div className="flex items-center justify-center py-8 flex-col">
         <Header />
 
-        <div className="py-8">
-          <h2 className="text-2xl font-extrabold">
-            João, como você quer pagar?
-          </h2>
-        </div>
+        <MainText>João, como você quer pagar?</MainText>
 
         <PixInput />
 

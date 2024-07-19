@@ -6,7 +6,7 @@ import TextField from "@mui/material/TextField";
 export function FormCheckout() {
   return (
     <Box
-      className="space-y-4"
+      className="space-y-4 px-3"
       component="form"
       noValidate
       autoComplete="off"
@@ -58,7 +58,7 @@ export function FormCheckout() {
           />
           <TextField
             fullWidth
-            id="helperText"
+            id="cvv"
             label="CVV"
             type="number"
             InputLabelProps={{
@@ -70,10 +70,10 @@ export function FormCheckout() {
 
       <div className="w-full">
         <FormControl className="w-full">
-          <InputLabel id="demo-simple-select-label">Parcelas</InputLabel>
+          <InputLabel id="select-label">Parcelas</InputLabel>
           <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
+            labelId="select-label"
+            id="select"
             label="Parcelas"
             defaultValue={paymentOptions[0].installments}
           >
