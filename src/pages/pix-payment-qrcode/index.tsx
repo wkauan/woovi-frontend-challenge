@@ -1,11 +1,11 @@
 import { ArrowRight, Files } from "lucide-react";
-import { Header } from "../../components/header";
-import { Footer } from "../../components/footer";
 import { useNavigate } from "react-router-dom";
-import { PaymentDetails } from "../../components/payment-details";
-import { PaymentDeadline } from "../../components/payment-deadline";
-import { PaymentId } from "../../components/payment-id";
 import { Button } from "../../components/button";
+import { Footer } from "../../components/footer";
+import { Header } from "../../components/header";
+import { PaymentDeadline } from "../../components/payment-deadline";
+import { PaymentDetails } from "../../components/payment-details";
+import { PaymentId } from "../../components/payment-id";
 
 export function PixPaymentQrCode() {
   const navigate = useNavigate();
@@ -39,7 +39,7 @@ export function PixPaymentQrCode() {
 
         <PaymentDeadline />
 
-        <PaymentDetails total={"30.600,00"} />
+        <PaymentDetails isChecked={false} total={"30.600,00"} />
 
         <PaymentId />
 
